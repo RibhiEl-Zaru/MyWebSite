@@ -18,7 +18,7 @@ class Header extends Component {
     return (<Navbar class="navbar navbar-inverse">
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#home">Sweet Logo</a>
+          <a href="#home">Logo</a>
         </Navbar.Brand>
       </Navbar.Header>
 
