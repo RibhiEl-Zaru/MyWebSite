@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
-import {
-  Navbar,
-  NavItem,
-  Nav,
-  Grid,
-  Row,
-  Col,
-  MenuItem,
-  NavDropdown
-} from "react-bootstrap";
+import {Navbar, NavItem, Nav, MenuItem, NavDropdown} from "react-bootstrap";
 
 class Header extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
+
+  handleSelect(selectedKey) {
+    console.log(selectedKey)
+    this.props.changeSelected(selectedKey);
+  }
+
   render() {
+    this.props.changeSelected();
     return (<Navbar class="navbar navbar-inverse">
       <Navbar.Header>
         <Navbar.Brand>
@@ -22,11 +20,11 @@ class Header extends Component {
         </Navbar.Brand>
       </Navbar.Header>
 
-      <Nav className="navbar-right">
-        <NavItem eventKey={1} href="#">
+      <Nav className="navbar navbar-dark bg-dark" onSelect={this.handleSelect.bind(this)}>
+        <NavItem eventKey={"About Me"}>
           About Me
         </NavItem>
-        <NavItem eventKey={2} href="#">
+        <NavItem eventKey={"Portfolio"}>
           Portfolio
         </NavItem>
         <NavItem eventKey={3} href="#">
