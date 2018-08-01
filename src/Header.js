@@ -12,7 +12,6 @@ class Header extends Component {
   }
 
   render() {
-    this.props.changeSelected();
     return (<Navbar class="navbar navbar-inverse">
       <Navbar.Header>
         <Navbar.Brand>

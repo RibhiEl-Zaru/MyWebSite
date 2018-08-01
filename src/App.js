@@ -43,7 +43,7 @@ class App extends Component {
     console.log(key);
     this.state.activeSite = key
     console.log(this.state)
-    //this.setState({activeSite: key})
+    this.setState({activeSite: this.state.activeSite})
   }
 
 }
