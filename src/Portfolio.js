@@ -7,7 +7,7 @@ class Portfolio extends Component {
     return (<div >
       <div className="Center">
         <h1>
-          This is where I will detail my achievements as a programmer.
+          This is where I
         </h1>
       </div>
       <br/>

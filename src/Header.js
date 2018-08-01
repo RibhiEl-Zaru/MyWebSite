@@ -13,23 +13,24 @@ class Header extends Component {
 
   render() {
     return (<Navbar class="navbar navbar-inverse">
-      <Navbar.Header>
-        <Navbar.Brand>
-          <a href="#home">Logo</a>
-        </Navbar.Brand>
-      </Navbar.Header>
 
       <Nav className="navbar navbar-dark bg-dark" onSelect={this.handleSelect.bind(this)}>
+        <Navbar.Header>
+          {/* // Try to get it to align center --> */}
+          <Navbar.Brand>
+            <a href="#home">Logo</a>
+          </Navbar.Brand>
+        </Navbar.Header>
         <NavItem eventKey={"About Me"}>
           About Me
         </NavItem>
         <NavItem eventKey={"Portfolio"}>
           Portfolio
         </NavItem>
-        <NavItem eventKey={3} href="#">
+        <NavItem eventKey={"Hobbies"} href="#">
           Hobbies
         </NavItem>
-        <NavItem eventKey={4} href="#">
+        <NavItem eventKey={"Contact Me"} href="#">
           Contact Me
         </NavItem>
         <NavDropdown eventKey={5} title="Dropdown" id="basic-nav-dropdown">

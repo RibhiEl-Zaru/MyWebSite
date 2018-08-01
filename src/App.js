@@ -5,12 +5,15 @@ import "bootswatch/journal/bootstrap.css";
 import Header from "./Header.js"
 import AboutMe from "./AboutMe.js"
 import Portfolio from "./Portfolio.js"
+import Hobbies from "./Hobbies.js"
+import ContactMe from "./ContactMe.js"
 
 const CORE = {
   "About Me": <AboutMe/>,
 
   "Portfolio": <Portfolio/>,
-  3: <div>dfasdfd</div>
+  "Hobbies": <Hobbies/>,
+  "Contact Me": <ContactMe/>
 }
 
 class App extends Component {
@@ -25,15 +28,11 @@ class App extends Component {
     console.log("DSDF");
   }
   render() {
-    const activeSite = this.state.activeSite;
-    console.log(activeSite)
-    console.log("King Kunta")
-    const div = CORE[activeSite]
-    console.log(div)
+    const body = CORE[this.state.activeSite]
     return (<div className="App">
       <div >< Header changeSelected={this.changeSelected.bind(this)}/></div>
       <div className="Body">
-        {div}
+        {body}
       </div>
     </div>);
 
