@@ -38,6 +38,14 @@
     justify-content: center;
 }
 
+.textChunk{
+    align-content : center;
+    text-align: left;
+   padding-right: 15%;
+   padding-left: 15%;
+}
+
+
 .container {
   width : 50%;
   display: flex;

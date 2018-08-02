@@ -5,14 +5,14 @@ import "bootswatch/journal/bootstrap.css";
 import Header from "./Header.js"
 import AboutMe from "./AboutMe.js"
 import Portfolio from "./Portfolio.js"
-import Hobbies from "./Hobbies.js"
+import Photography from "./Photography.js"
 import ContactMe from "./ContactMe.js"
 
 const CORE = {
   "About Me": <AboutMe/>,
 
   "Portfolio": <Portfolio/>,
-  "Hobbies": <Hobbies/>,
+  "Photography": <Photography/>,
   "Contact Me": <ContactMe/>
 }
 
