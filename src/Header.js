@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Navbar, NavItem, Nav, MenuItem, NavDropdown} from "react-bootstrap";
-
+import './App.css';
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -12,21 +12,26 @@ class Header extends Component {
   }
 
   render() {
-    return (<Navbar class="navbar navbar-inverse">
-
+    return (<Navbar>
       <Nav className="navbar navbar-dark bg-dark" onSelect={this.handleSelect.bind(this)}>
+        {/*
         <Navbar.Header>
-          {/* // Try to get it to align center --> */}
+          {/* // Try to get it to align center -->
           <Navbar.Brand>
-            <a href="#home">Logo</a>
+            <a>Logo</a>
           </Navbar.Brand>
         </Navbar.Header>
+        */
+        }
         <NavItem eventKey={"About Me"}>
           About Me
         </NavItem>
-        <NavItem eventKey={"Portfolio"}>
-          Portfolio
-        </NavItem>
+        <NavDropdown eventKey={"Projects"} title="Projects" id="basic-nav-dropdown">
+          <MenuItem eventKey={"MentalRep"}>MentalRep</MenuItem>
+          <MenuItem eventKey={"Assembly Language Decoder"}>Assembly Language Decoder</MenuItem>
+          <MenuItem eventKey={"Genre Prediction"}>Genre Prediction</MenuItem>
+          <MenuItem eventKey={"Cryptography"}>Cryptography</MenuItem>
+        </NavDropdown>
         <NavDropdown eventKey={"Hobbies"} title="Hobbies" id="basic-nav-dropdown">
           <MenuItem eventKey={"Photography"}>Photography</MenuItem>
           <MenuItem eventKey={"Sports"}>Sports</MenuItem>
@@ -39,7 +44,7 @@ class Header extends Component {
 
       </Nav>
     </Navbar>)
-  }
-}
+      }
+        }
 
 export default Header

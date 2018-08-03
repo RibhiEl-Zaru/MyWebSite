@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {PageHeader} from 'react-bootstrap';
 
-class ContactMe extends Component {
+class MentalRep extends Component {
 
   render() {
     return (<div >
@@ -19,4 +19,4 @@ class ContactMe extends Component {
   }
 }
 
-export default ContactMe
+export default MentalRep

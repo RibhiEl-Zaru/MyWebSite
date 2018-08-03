@@ -11,13 +11,15 @@ import march from "../public/photos/DCMarch.JPG";
 import protest from "../public/photos/ProtestShot.JPG";
 import inaug from "../public/photos/TrumpInaug.JPG";
 
-var fs = require('fs');
 var path = "../public/photos/"
-
 import {Carousel} from 'react-bootstrap';
 class Photography extends Component {
+  constructor() {
+    super();
+  }
 
   render() {
+
     return (<div >
       <div className="Center">
         <h1>
@@ -25,15 +27,15 @@ class Photography extends Component {
         </h1>
       </div>
       <br/>
-      <div className="textChunk">
+      <div>
 
         &nbsp;&nbsp;I, like many people, have a great love for photography. Documenting the special moments of our lives, whether they be monumental or simple, is probably why 80% of Apple customers pay that extra buck for extra iCloud storage, and give us reminders of the times we reflect happily on. For this reason, my first large adult purchase was the best camera in the world, my Nikon. A purchase that has paid for itself and then some. Below I show off some of my favorite shots using the sweet Carousel tool from React-Bootstrap. Hope you like the shots as much as I do!
         <br/>
         <br/>
 
-        <Carousel >
+        <Carousel className="Center">
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={doggo}/>
+            <img alt="900x500" src={doggo}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -44,7 +46,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={hayaSophia}/>
+            <img alt="900x500" src={hayaSophia}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -55,7 +57,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={mosque}/>
+            <img alt="900x500" src={mosque}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -65,7 +67,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={nablus}/>
+            <img alt="900x500" src={nablus}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "black"
@@ -75,7 +77,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={Sunset}/>
+            <img alt="900x500" src={Sunset}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -85,7 +87,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={kid}/>
+            <img alt="900x500" src={kid}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -95,7 +97,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={flower}/>
+            <img alt="900x500" src={flower}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -105,7 +107,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={inaug}/>
+            <img alt="900x500" src={inaug}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -117,7 +119,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={protest}/>
+            <img alt="900x500" src={protest}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -128,7 +130,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img width={900} height={500} alt="900x500" src={march}/>
+            <img alt="900x500" src={march}/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -139,8 +141,6 @@ class Photography extends Component {
 
         </Carousel>
       </div>
-      <br/>
-      <br/>
 
     </div>)
   }
