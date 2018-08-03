@@ -10,6 +10,7 @@ import flower from "../public/photos/FlowerShot.JPG";
 import march from "../public/photos/DCMarch.JPG";
 import protest from "../public/photos/ProtestShot.JPG";
 import inaug from "../public/photos/TrumpInaug.JPG";
+import {PageHeader} from 'react-bootstrap';
 
 var path = "../public/photos/"
 import {Carousel} from 'react-bootstrap';
@@ -22,9 +23,11 @@ class Photography extends Component {
 
     return (<div >
       <div className="Center">
-        <h1>
+
+        <PageHeader>
           Photography
-        </h1>
+
+        </PageHeader>
       </div>
       <br/>
       <div>

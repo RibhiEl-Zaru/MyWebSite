@@ -8,20 +8,23 @@ import Portfolio from "./Portfolio.js"
 import Photography from "./Photography.js"
 import ContactMe from "./ContactMe.js"
 import MentalRep from "./MentalRep.js"
+import Sports from "./Sports.js"
 
 const CORE = {
   "About Me": <AboutMe/>,
   "Portfolio": <Portfolio/>,
   "Photography": <Photography/>,
   "Contact Me": <ContactMe/>,
-  "MentalRep": <MentalRep/>
+  "MentalRep": <MentalRep/>,
+  "Sports": <Sports/>
+
 }
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      activeSite: "MentalRep"
+      activeSite: "Sports"
     }
   }
 
