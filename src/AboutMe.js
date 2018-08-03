@@ -14,7 +14,7 @@ class AboutMe extends Component {
       </div>
       <br/>
       <div >
-        First of all, thaks for checking out my website! I'm a developer from the great city of Boston, MA. Proudly, this is the beginning of my website! I've always been a fan of the ReactJS platform, and decided to flex and use it to code my own Portfolio from scratch. Speaking of flex, I'm actually realllly strugling with spacing and hope that tool will help eventually! But until then, here is my favorite picture of myself, as created by a true homie, Brandon Navon.
+        First of all, thaks for checking out my website! I&#39;m a developer from the great city of Boston, MA. Proudly, this is the beginning of my website! I&#39;ve always been a fan of the ReactJS platform, and decided to flex and use it to code my own Portfolio from scratch. Speaking of flex, I&#39;m actually realllly strugling with spacing and hope that tool will help eventually! But until then, here is my favorite picture of myself, as created by a true homie, Brandon Navon.
 
       </div>
       <br/>

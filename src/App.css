@@ -38,7 +38,15 @@
     justify-content: center;
 }
 
+.List {
+    width : 80%;
+    display: flex;
+    justify-content: center;
+}
 
+.discList{
+  list-style-type:square;
+}
 .textChunk{
     align-content : center;
     text-align: left;

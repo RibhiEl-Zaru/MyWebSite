@@ -21,13 +21,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      activeSite: "About Me"
+      activeSite: "MentalRep"
     }
   }
 
-  componentWillMount() {
-    console.log("DSDF");
-  }
+  componentWillMount() {}
   render() {
     const body = CORE[this.state.activeSite]
     return (<div className="App">
