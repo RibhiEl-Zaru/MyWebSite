@@ -11,7 +11,7 @@ import MentalRep from "./MentalRep.js"
 import Sports from "./Sports.js"
 import GenrePrediction from "./GenrePrediction.js"
 import DecoderDisplay from "./DecoderDisplay.js"
-
+import Cryptography from "./Cryptography.js"
 const CORE = {
   "About Me": <AboutMe/>,
   "Portfolio": <Portfolio/>,
@@ -20,7 +20,8 @@ const CORE = {
   "MentalRep": <MentalRep/>,
   "Sports": <Sports/>,
   "Genre": <GenrePrediction/>,
-  "AssemblyLanguage": <DecoderDisplay/>
+  "AssemblyLanguage": <DecoderDisplay/>,
+  "Cryptography": <Cryptography/>
 
 }
 
@@ -28,7 +29,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      activeSite: "About Me"
+      activeSite: "Cryptography"
     }
   }
 
