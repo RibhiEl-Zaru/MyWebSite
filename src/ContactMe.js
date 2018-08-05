@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {PageHeader} from 'react-bootstrap';
-
+import Form from './Form.js'
 class ContactMe extends Component {
 
   render() {
@@ -12,8 +12,13 @@ class ContactMe extends Component {
         </PageHeader>
       </div>
       <div >
-        I'm a developer from the great city of Boston, MA. Proudly, this is the beginning of my website! I've always been a fan of the ReactJS platform, and decided to flex and use it to code my own Portfolio from scratch. Speaking of flex, I'm actually realllly strugling with spacing and hope it'll help eventually! But until then, here's my favorite picture of myself, as created by a true homie, Brandon Navon.
+        If you want to send me a message feel free to fill out the form below to send me an email! Any messages are welcome, be it advice, hate mail, miscellaneous inquiries or a quick hello!
 
+      </div>
+      <br/>
+      <br/>
+      <div className="Form">
+        <Form/>
       </div>
     </div>)
   }

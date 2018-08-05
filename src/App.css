@@ -38,6 +38,11 @@
     justify-content: center;
 }
 
+.Form{
+  width : 80%;
+  justify-content: center;
+}
+
 .List {
     width : 80%;
     display: flex;
