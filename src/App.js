@@ -29,7 +29,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      activeSite: "Cryptography"
+      activeSite: "About Me"
     }
   }
 
