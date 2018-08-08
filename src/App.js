@@ -12,6 +12,7 @@ import Sports from "./Sports.js"
 import GenrePrediction from "./GenrePrediction.js"
 import DecoderDisplay from "./DecoderDisplay.js"
 import Cryptography from "./Cryptography.js"
+
 const CORE = {
   "About Me": <AboutMe/>,
   "Portfolio": <Portfolio/>,
