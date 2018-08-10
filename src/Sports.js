@@ -1,10 +1,35 @@
 import React, {Component} from 'react';
 import './App.css';
 import {PageHeader} from 'react-bootstrap';
-import MentalRepLogo from "../public/MentalRep.png"
+import TableDisplay from './TableDisplay.js';
+const MLBApi = require('node-mlb-api');
+
 class Sports extends Component {
 
+  constructor() {
+    super()
+    this.state = {
+      ALCentral: {},
+      ALEast: {},
+      ALWest: {}
+    }
+    var a;
+    var promise = new Promise(function(resolve, reject) {
+      // call resolve if the method succeeds
+      let a = MLBApi.getStandings('AL', 2018) // 2018 AL Standings
+      resolve(a);
+    })
+    promise.then(bool => {
+      var a = <TableDisplay records={bool.records}></TableDisplay>;
+      this.setState({ALCentral: bool.records[0].teamRecords, ALEast: bool.records[1].teamRecords, ALWest: bool.records[2].teamRecords})
+
+    })
+  }
+
+  componentDidMount() {}
   render() {
+    console.log(this.state);
+    const body = <TableDisplay records={this.state}></TableDisplay>
     return (<div >
       <div className="Center">
         <PageHeader>
@@ -27,6 +52,9 @@ class Sports extends Component {
           <PageHeader>
             The Legendary Bo-Sox
           </PageHeader>
+        </div>
+        <div >
+          {body}
         </div>
       </div>
     </div>)
