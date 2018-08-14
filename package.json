@@ -13,14 +13,16 @@
     "react-bootstrap": "^0.30.10",
     "react-center": "^1.1.1",
     "react-dom": "^15.5.4",
-    "react-dropzone": "^4.2.13",
+    "react-dropzone": "^4.3.0",
     "react-rangeslider": "^2.2.0",
+    "react-responsive-carousel": "^3.1.41",
     "react-table": "^6.8.6",
-    "simple-react-pdf": "^1.0.9"
+    "simple-react-pdf": "^1.0.9",
+    "webpack": "^4.16.5"
   },
   "devDependencies": {
     "react-scripts": "0.9.5",
-    "webpack-dev-server": "^1.9.0"
+    "webpack-dev-server": "^1.16.5"
   },
   "scripts": {
     "start": "react-scripts start",
