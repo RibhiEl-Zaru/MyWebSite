@@ -49,10 +49,7 @@ class App extends Component {
   }
 
   changeSelected(key) {
-    console.log(key);
-    this.state.activeSite = key
-    console.log(this.state)
-    this.setState({activeSite: this.state.activeSite})
+    this.setState({activeSite: key})
   }
 
 }

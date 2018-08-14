@@ -13,14 +13,13 @@ class Sports extends Component {
       ALEast: {},
       ALWest: {}
     }
-    var a;
     var promise = new Promise(function(resolve, reject) {
       // call resolve if the method succeeds
       let a = MLBApi.getStandings('AL', 2018) // 2018 AL Standings
       resolve(a);
     })
     promise.then(bool => {
-      var a = <TableDisplay records={bool.records}></TableDisplay>;
+      //      var a = <TableDisplay records={bool.records}></TableDisplay>;
       this.setState({ALCentral: bool.records[0].teamRecords, ALEast: bool.records[1].teamRecords, ALWest: bool.records[2].teamRecords})
 
     })

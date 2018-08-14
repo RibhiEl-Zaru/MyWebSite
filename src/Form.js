@@ -1,13 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {
-  FormGroup,
-  Col,
-  ControlLabel,
-  FormControl,
-  Checkbox,
-  Button
-} from 'react-bootstrap'
+import {FormGroup, Col, ControlLabel, FormControl, Button} from 'react-bootstrap'
 class Form extends Component {
 
   constructor(props) {
@@ -31,7 +24,7 @@ class Form extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    window.open('mailto:' + 'ribhielzaru@gmail.com?subject=' + this.state.subject + '&body=' + this.state.message);
+    window.open('mailto: ribhielzaru@gmail.com?subject=' + this.state.subject + '&body=' + this.state.message);
   }
 
   render() {

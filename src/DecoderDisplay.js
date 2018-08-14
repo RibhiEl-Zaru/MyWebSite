@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
 import {PageHeader} from 'react-bootstrap';
-import Form from './Form.js'
 import ALDecoder from "./ALDecoder.js"
 class DecoderDisplay extends Component {
 

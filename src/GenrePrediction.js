@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {PageHeader} from 'react-bootstrap';
-import Form from './Form.js'
+
 class GenrePrediction extends Component {
 
   render() {

@@ -12,12 +12,8 @@ import protest from "../public/photos/ProtestShot.JPG";
 import inaug from "../public/photos/TrumpInaug.JPG";
 import {PageHeader} from 'react-bootstrap';
 
-var path = "../public/photos/"
 import {Carousel} from 'react-bootstrap';
 class Photography extends Component {
-  constructor() {
-    super();
-  }
 
   render() {
 
@@ -26,7 +22,6 @@ class Photography extends Component {
 
         <PageHeader>
           Photography
-
         </PageHeader>
       </div>
       <br/>
@@ -38,7 +33,7 @@ class Photography extends Component {
 
         <Carousel className="Center">
           <Carousel.Item width={900} height={500}>
-            <img src={doggo}/>
+            <img src={doggo} alt="doggo"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -49,7 +44,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item width={900} height={500}>
-            <img src={hayaSophia}/>
+            <img src={hayaSophia} alt="hayaSophia"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -60,7 +55,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item width={900} height={500}>
-            <img src={mosque}/>
+            <img src={mosque} alt="mosque"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -70,7 +65,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item width={900} height={500}>
-            <img src={nablus}/>
+            <img src={nablus} alt="nablus"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "black"
@@ -80,7 +75,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item width={900} height={500}>
-            <img src={Sunset}/>
+            <img src={Sunset} alt="sunset"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -90,7 +85,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item width={900} height={500}>
-            <img src={kid}/>
+            <img src={kid} alt="kid"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -100,7 +95,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item width={900} height={500}>
-            <img src={flower}/>
+            <img src={flower} alt="flower"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -110,7 +105,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item width={900} height={500}>
-            <img src={inaug}/>
+            <img src={inaug} alt="Inauguration"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -122,7 +117,7 @@ class Photography extends Component {
           </Carousel.Item>
 
           <Carousel.Item width={900} height={500}>
-            <img src={protest}/>
+            <img src={protest} alt="Protest"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"
@@ -133,7 +128,7 @@ class Photography extends Component {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img src={march}/>
+            <img src={march} alt="Protest"/>
             <Carousel.Caption>
               <h3 style={{
                   color: "white"

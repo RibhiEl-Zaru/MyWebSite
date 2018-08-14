@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import {Navbar, NavItem, Nav, MenuItem, NavDropdown} from "react-bootstrap";
 import './App.css';
 class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   handleSelect(selectedKey) {
     console.log(selectedKey)

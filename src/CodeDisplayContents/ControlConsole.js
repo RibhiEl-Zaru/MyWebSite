@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css';
-import {ButtonToolbar, Grid, Row, Col, Button} from "react-bootstrap";
+import {ButtonToolbar, Grid, Row, Button} from "react-bootstrap";
 import Center from 'react-center';
 import FileUploadButton from "./FileUploadButton.js"
 

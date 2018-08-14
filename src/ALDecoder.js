@@ -1,13 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 // import "bootstrap/dist/css/bootstrap.css";
 import "bootswatch/journal/bootstrap.css";
 import {Grid, Row, Col} from "react-bootstrap";
 import CodeDisplay from "./CodeDisplay.js";
 import AssemblyLanguageInstructions from "./AssemblyLanguageInstructions.js";
 import DataDisplay from "./DataDisplay.js";
-import Header from "./ALHeader.js";
-import brace from 'brace';
-
+/* eslint-disable */
 import 'brace/mode/java';
 import 'brace/theme/github';
 
@@ -49,7 +47,6 @@ let UTIL_REGS = [
 let MEMORY_OPS = [];
 let MEMORY = new Map();
 let inputMem = new Map();
-let dataValStr = "";
 
 var InstrTypes = {
   NONE: "X",
@@ -287,8 +284,8 @@ class ALDecoder extends React.Component {
 
     for (var i = 0; i < compiledCode.length; i++) {
 
-      let e = compiledCode[i];
-      e = e + " ";
+      let e = compiledCode[i] + " ";
+
       let op = "";
 
       op = e.substring(0, e.indexOf(" "));
@@ -555,7 +552,7 @@ class ALDecoder extends React.Component {
           null
         ]);
 
-      } else if (opType == InstrTypes.BREAK) {
+      } else if (opType === InstrTypes.BREAK) {
         let disp = "";
 
         disp = e.substring(e.indexOf(" ") + 1, e.length).trim();
@@ -702,7 +699,7 @@ class ALDecoder extends React.Component {
       armInstrs.LI(OP_REGS[i], 0);
     }
     for (var j = 0; j < UTIL_REGS.length; j++) {
-      if (j == 0 || j == 2) {
+      if (j === 0 || j === 2) {
         armInstrs.LI(UTIL_REGS[j], 1);
       } else {
         armInstrs.LI(UTIL_REGS[j], 0);
@@ -716,9 +713,9 @@ class ALDecoder extends React.Component {
   memoryWipe() {
     this.state.inputMem.clear();
     this.state.memory.clear();
-    this.state.dataValStr = "";
     this.setState({inputMem})
     this.setState({memory: MEMORY})
+    this.setState({dataValStr: ""})
   }
   resetMemory() {
     MEMORY.clear();
