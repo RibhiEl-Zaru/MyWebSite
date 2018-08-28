@@ -25,7 +25,7 @@ class Header extends Component {
         </NavItem>
         <NavDropdown eventKey={"Projects"} title="Projects" id="basic-nav-dropdown">
           <MenuItem eventKey={"MentalRep"}>MentalRep</MenuItem>
-          <MenuItem eventKey={"AssemblyLanguage"}>Assembly Language Decoder</MenuItem>
+          <MenuItem eventKey={"ReactWidgets"}>React Widgets</MenuItem>
           <MenuItem eventKey={"Genre"}>Genre Prediction</MenuItem>
           <MenuItem eventKey={"Cryptography"}>Cryptography</MenuItem>
         </NavDropdown>

@@ -7,6 +7,42 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+.rowC{display:flex; flex-direction:row;}
+
+.chart {
+  width : 80%;
+}
+
+.btn-group button {
+    background-color: #B2BABB; /* Silver background */
+    color: black; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    width : 100px;
+    margin : 5px
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #34495E;
+}
+
+.buttons{
+  align: center;
+  margin:auto;
+}
 
 .App-header {
   background-color: #222;

@@ -10,7 +10,7 @@ import ContactMe from "./ContactMe.js"
 import MentalRep from "./MentalRep.js"
 import Sports from "./Sports.js"
 import GenrePrediction from "./GenrePrediction.js"
-import DecoderDisplay from "./DecoderDisplay.js"
+import ReactWidgets from "./ReactWidgets.js"
 import Cryptography from "./Cryptography.js"
 
 const CORE = {
@@ -21,7 +21,7 @@ const CORE = {
   "MentalRep": <MentalRep/>,
   "Sports": <Sports/>,
   "Genre": <GenrePrediction/>,
-  "AssemblyLanguage": <DecoderDisplay/>,
+  "ReactWidgets": <ReactWidgets/>,
   "Cryptography": <Cryptography/>
 
 }
@@ -37,6 +37,7 @@ class App extends Component {
   componentWillMount() {}
   render() {
     const body = CORE[this.state.activeSite]
+    console.log(body);
     return (<div className="App">
       <div >< Header changeSelected={this.changeSelected.bind(this)}/></div>
       <div className="textChunk">
